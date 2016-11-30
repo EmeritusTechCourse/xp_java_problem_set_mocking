@@ -2,4 +2,4 @@
 
 ### Goal
 
-Provide an implementation for `OrmTest` using manually created mocks.
+Provide an implementation for `OrmTest`.
