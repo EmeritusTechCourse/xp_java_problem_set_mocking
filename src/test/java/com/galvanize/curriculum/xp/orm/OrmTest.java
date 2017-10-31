@@ -1,5 +1,6 @@
 package com.galvanize.curriculum.xp.orm;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.fail;
@@ -7,14 +8,17 @@ import static org.junit.Assert.fail;
 public class OrmTest {
 
     @Test
-    public void utilizesDriverToSaveObject() {
-        // TODO: implement
-        fail("Not yet implemented");
-    }
+    public void blackBoxTestSaveAndLoad() {
+        // Setup
+        Orm orm = new Orm(new SuperComplexDriver());
+        Object expected = "test";
+        int id = expected.hashCode();
 
-    @Test
-    public void utilizesDriverToGetObject() {
-        // TODO: implement
-        fail("Not yet implemented");
+        // Setup & exercise
+        orm.save(expected);
+        Object actual = orm.get(id);
+
+        // Assert
+        Assert.assertEquals("Orm should save and load", expected, actual);
     }
 }
