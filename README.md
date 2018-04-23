@@ -10,7 +10,7 @@ This exercise gives students practice creating mocks without the help of automat
 
 ## Objectives
 
-- Demonstrate knowlege of the [difference between](https://martinfowler.com/articles/mocksArentStubs.html) mocks, fakes, and spies.
+- Demonstrate knowledge of the [difference between](https://martinfowler.com/articles/mocksArentStubs.html) mocks, fakes, and spies.
 - Manually create spies
 - Write code that utilizes constructor injection
 - Write tests that utilize spies and DI
@@ -23,17 +23,19 @@ An Orm has been written for you, as well as a `Driver` interface, and a real imp
 
 ## Assignment
 
-1. Choose the appropriate type of test double to allow for pure, white-box unit testing
+1. Choose the appropriate type of test double to allow for pure, transparent-box unit testing of the ORM
 1. Write a test-double which implements the driver interface
-1. Break up the existing black-box unit test into multiple whitebox tests
+1. Break up the existing black-box unit test into multiple transparent-box tests
 1. Inject your test-double in your tests
-1. Use the correct behavior-based assertions, instead of the current state-based ones in your new white-box tests
+1. Use the correct behavior-based assertions, instead of the current state-based ones in your new transparent-box tests
+1. Create a new feature branch and solve again using Mockito instead of manually mocking
 
 ## Resources
 
 - To complete this assignment, you will need to understand the difference between types of test double. [This article](https://martinfowler.com/articles/mocksArentStubs.html) will provide the requisite knowledge.
 
-## Stretch
+## Additional Resources
 
-- If you complete this exercise early, create a new branch and solve it again using [Mockito](http://site.mockito.org/)
+- [Mockito Tutorial](http://site.mockito.org/)
+- [Mockito Documentation](https://static.javadoc.io/org.mockito/mockito-core/2.13.0/org/mockito/Mockito.html#1)
    
