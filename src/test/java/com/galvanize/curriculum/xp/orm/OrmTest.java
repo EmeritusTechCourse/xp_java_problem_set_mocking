@@ -1,9 +1,7 @@
 package com.galvanize.curriculum.xp.orm;
 
-import org.junit.Assert;
-import org.junit.Test;
-
-import static org.junit.Assert.fail;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 public class OrmTest {
 
@@ -19,6 +17,6 @@ public class OrmTest {
         Object actual = orm.get(id);
 
         // Assert
-        Assert.assertEquals("Orm should save and load", expected, actual);
+        assertEquals(expected, actual, "Orm should save and load");
     }
 }
